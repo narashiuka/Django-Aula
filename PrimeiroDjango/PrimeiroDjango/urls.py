@@ -14,6 +14,10 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),
     path('about/', views.about, name='about'),
     path('hello/<nome>/<int:idade>/', views.hello),
+    path('soma/<int:num1>/<int:num2>/', views.soma),
+    path('subtracao/<int:num1>/<int:num2>/', views.subtracao),
+    path('multiplicacao/<int:num1>/<int:num2>/', views.multiplicacao),
+    path('divisao/<int:num1>/<int:num2>/', views.divisao),
     path('login/',
          LoginView.as_view
          (
